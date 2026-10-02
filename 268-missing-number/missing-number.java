@@ -1,11 +1,11 @@
 class Solution {
     public int missingNumber(int[] nums) {
-        int missNumber = 0;
+        int missNum=0;
         for(int i=0;i<nums.length;i++)
         {
-            missNumber =missNumber^nums[i]^i;
+            missNum=missNum^nums[i]^i;
         }
-        return missNumber^nums.length;
+        return missNum^nums.length;
         
     }
 }
