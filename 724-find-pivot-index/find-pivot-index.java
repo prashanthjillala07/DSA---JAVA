@@ -3,8 +3,9 @@ class Solution {
         int leftSum = 0;
         int rightSum = 0;
         int totalSum=0;
-        for (int num : nums) {
-            totalSum += num;
+        for(int num:nums)
+        {
+            totalSum+=num;
         }
         for(int i=0;i<nums.length;i++)
         {
@@ -16,6 +17,5 @@ class Solution {
             leftSum+=nums[i];
         }
         return -1;
-
     }
 }
