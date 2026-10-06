@@ -2,6 +2,9 @@ class Solution {
     public int removeDuplicates(int[] nums) {
         int write=0;
         int read=0;
+        if (nums.length == 0) {
+         return 0;
+        }
         while(read<nums.length)
         {
             if(nums[read]!=nums[write]){
