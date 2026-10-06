@@ -1,11 +1,10 @@
 class Solution {
     public int removeDuplicates(int[] nums) {
-        int read=0;
         int write=0;
+        int read=0;
         while(read<nums.length)
         {
-            if(nums[write]!=nums[read])
-            {
+            if(nums[read]!=nums[write]){
                 write++;
                 nums[write]=nums[read];
             }
